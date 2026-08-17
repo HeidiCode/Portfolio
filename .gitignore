@@ -1,0 +1,9 @@
+# macOS
+.DS_Store
+**/.DS_Store
+
+# Editor
+.vscode/
+
+# Azure Static Web Apps deployment output
+.deployment

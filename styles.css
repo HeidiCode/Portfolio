@@ -1,0 +1,285 @@
+/* Great to see you here! I did this! */
+
+body {
+      --bs-font-sans-serif: 'Manrope', sans-serif;
+      --bs-body-font-family: var(--bs-font-sans-serif);
+      --bs-link-color-rgb: 0, 90, 118;
+      padding-top: 70px;
+}
+
+body a {
+    text-decoration: none;
+}
+
+header.work {
+    background-color: #fff;
+    background-image: url("images/arrow-down.svg"), url("images/arrow-right.svg");
+    background-repeat: no-repeat, repeat;
+    background-position-y: 28.3rem, top;
+    background-position-x: 43rem, left;
+    padding: 2rem 0;
+    height: 625px;
+}
+
+.arrows-left {
+    background-color: #fff;
+    background-image: url("images/arrow-right.svg");
+    background-repeat: repeat;
+    height: 625px;
+}
+
+.arrows-hero {
+    background-color: #fff;
+    background-image: url("images/arrow-down.svg"), url("images/arrow-right.svg");
+    background-repeat: no-repeat, repeat;
+    background-position-y: 24rem, top;
+    background-position-x: 14rem, left;
+    height: 625px;
+}
+
+.case-study-background {
+    background-color: #fff;
+    background-image: url("images/arrow-down.svg"), url("images/arrow-right.svg");
+    background-repeat: no-repeat, repeat;
+    background-position-y: 4rem, top;
+    background-position-x: 14rem, left;
+    padding: 2rem 0;
+    height: 133px;
+}
+
+header .hero-text {
+    background-color: #fff;
+    margin-top: 6rem;
+}
+
+header h1 {
+    font-size: 4.5rem;
+    font-weight: 600;
+    line-height: 1;
+    font-family: 'Playfair Display', serif;
+    color: #005B76;
+}
+
+main h2 {
+    font-size:3.25rem;
+    font-family: 'Playfair Display', serif;
+}
+
+main h3 {
+    font-size: 1.75rem;
+    font-weight: 500;
+}
+
+h3.highlight {
+    position: relative;
+  }
+  
+h3.highlight::before {
+    content: "";
+    position: absolute;
+    width: 102%;
+    height: 90%;
+    top: 4rem;
+    left: -1rem;
+    background: #EBF9FD;
+    z-index: -1;
+  }
+
+main h4 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    padding-top: 1rem;
+}
+
+header p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+p {
+    font-size: 1.125rem;
+    line-height: 1.6;
+}
+
+li {
+    font-size: 1.125rem;
+    line-height: 1.6;
+    padding-bottom: 0.5rem;
+}
+
+.caption {
+    font-size: 1.25rem;
+    padding-left: 2px;
+}
+
+.hashs {
+    font-size: 1rem;
+    line-height: 1.75;
+    padding-left: 2px;
+    color: #707070;
+}
+
+.title-caption {
+    font-size: 1.5rem;
+    color: #707070;
+    padding-bottom: 1.6rem;
+}
+
+.image-caption {
+    font-size: 1rem;
+    color: #707070;
+    padding-top: 0.5rem;
+}
+
+.text-highlight {
+    background-color: #D3F7E2;
+    padding-left: 4px;
+    padding-right: 4px;
+}
+
+/* Mobile font sizes */
+@media (max-width: 992px) {
+
+    header h1 {
+        font-size: 3.5rem;
+        font-weight: 600;
+        line-height: 1;
+        font-family: 'Playfair Display', serif;
+        color: #005B76;
+    }
+    
+    main h2 {
+        font-size:2.5rem;
+        font-family: 'Playfair Display', serif;
+    }
+    
+    main h3 {
+        font-size: 1.35rem;
+        font-weight: 500;
+    }
+    
+    h3.highlight {
+        position: relative;
+      }
+      
+    h3.highlight::before {
+        content: "";
+        position: absolute;
+        width: 102%;
+        height: 90%;
+        top: 4rem;
+        left: -1rem;
+        background: #EBF9FD;
+        z-index: -1;
+      }
+    
+    main h4 {
+        font-size: 1rem;
+        font-weight: 600;
+        padding-top: 1rem;
+    }
+    
+    header p {
+        font-size: 1rem;
+    }
+    
+    p {
+        font-size: 1rem;
+    }
+    
+    li {
+        font-size: 1rem;
+        padding-bottom: 0.5rem;
+    }
+
+    .caption {
+        font-size: 1rem;
+        padding-left: 2px;
+    }
+    
+    .title-caption {
+        font-size: 1.35rem;
+        color: #707070;
+        padding-bottom: 1.6rem;
+    }
+    
+    .image-caption {
+        font-size: 1rem;
+        padding-top: 0.5rem;
+    }
+
+    .nav-item {
+        font-size: 1rem;
+        padding-right: 1rem;
+    }
+}
+
+.accent {
+    color: #f0f
+}
+
+a.case-link {
+    color: #005B76;
+    font-weight: 500;
+}
+
+a.case-link:hover {
+    text-decoration: underline;
+}
+
+a.back-link {
+    color: #005B76;
+    font-weight: 500;
+}
+
+a.back-link:hover {
+    text-decoration: underline;
+}
+
+.border {
+    border: 1px;
+    border-color: #DBDBDB;
+}
+
+.tp {
+    padding-top: 1rem;
+}
+
+/* Navigation styles */
+.navbar {
+    background-color: #fff;
+    size: 20px;
+}
+
+.navbar .active {
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
+    text-decoration-color: #F48C61;
+    text-underline-offset: 8px;
+}
+.navbar-brand {
+    font-family: 'Playfair Display';
+    size: 32px;
+    line-height: 1rem;
+}
+
+.nav-item {
+    font-size: 1rem;
+    padding-right: 1rem;
+    line-height: 1rem;
+    padding-top: 12px;
+}
+
+.navbar a:hover {
+    color: #202020;
+}
+
+footer {
+    background-color: #f7f7f7;
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
+
+.linkedin {
+    color:#005B76;
+}

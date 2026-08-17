@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="78" height="78" viewBox="0 0 78 78">
+  <g id="arrow_bg" data-name="arrow+bg" transform="translate(-378 -160)">
+    <rect id="bg" width="78" height="78" transform="translate(378 160)" fill="#fff"/>
+    <path id="arrow-right" d="M14.881,39.935,16.615,38.2a1.867,1.867,0,0,1,2.648,0L34.449,53.379a1.867,1.867,0,0,1,0,2.648L19.263,71.213a1.867,1.867,0,0,1-2.648,0l-1.734-1.734a1.877,1.877,0,0,1,.031-2.679l9.413-8.968H1.875A1.87,1.87,0,0,1,0,55.957v-2.5a1.87,1.87,0,0,1,1.875-1.875H24.325l-9.413-8.968a1.863,1.863,0,0,1-.031-2.679Z" transform="translate(378 122.35)" fill="#ebebeb"/>
+  </g>
+</svg>

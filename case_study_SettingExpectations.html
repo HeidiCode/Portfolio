@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Case Study - Heidi Manninen</title>
+    <!-- Link to the external CSS file -->
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@100..900&family=Playfair-display:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  </head>
+  <body>
+
+    <nav class="navbar fixed-top navbar-expand-sm">
+      <div class="container">
+        <div class="col-sm-4">
+          <a class="navbar-brand" href="index.html">Heidi Manninen</a>
+        </div>
+        <div class="col-sm-8">
+          <div class="navbar-nav flex-row">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="index.html">Work</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about_me.html">About me</a>
+            </li>
+          </div>
+        </div> 
+      </div>
+    </nav>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-2 back-link-area">
+                <a class="back-link" href="index.html">
+                    <img src="images/back-arrow.svg" class="img-fluid py-4" alt="Back to Work">
+                    Back
+                </a>
+            </div>
+            <div class="case-study-background col-lg-10">
+            </div>
+        </div>
+    </div>
+
+    <main class="container my-5">
+      <section id="case-study" class="">
+        <div class="row pb-5">
+          <div class="col-md-4 pb-4">
+            <div class="caption">Case Study</div>
+            <h2>Setting Expectations</h2>
+            <br>
+            <p class="hashs">
+              #B2B<br>
+              #B2C<br>
+              #ProUnemploymentFund
+            </p>
+          </div>
+          <div class="col-md-8">
+            <p>
+              We created two AI bots for unemployment fund. One for workers that handle the customers forms and one for their public web page 
+              to help visitors to find correct information for their need. These bots will transform how unemployment fund workers and customers 
+              navigate complex laws and benefits. It streamlines support, providing quick and hopefully accurate answers to ensure a smoother 
+              experience for everyone.
+            </p>
+            <p>
+              Product: <a href="https://www.prokassa.fi/etusivu.html" target="_blank">Pro unemployment fund public chatbot</a>
+            </p>
+            <h4>
+              Team
+            </h4>
+            <p>
+              Designer<br>
+              Data Scientist / Developer<br>
+              Project Manager
+            </p>
+            <h4>
+              My contribution
+            </h4>
+            <p>
+              Research<br>
+              User interviews<br>
+              User flows<br>
+              Wireframes<br>
+              UI + Visual design<br>
+              Style guide<br>
+              Accessibility<br>
+              Prototype   
+            </p>
+            <h3 class="highlight pt-5">
+              Research
+            </h3>
+            <p class="tp">
+              To create an effective AI chatbot, I conducted research into best practices by exploring articles and analyzing designs from ChatGPT, 
+              Perplexity, and other leading AI chatbots. This process helped identify essential principles to guide the project.
+            </p>
+            <p>
+              The best practices include setting clear expectations about the bot’s capabilities, ensuring users understand they are not chatting 
+              with a human, and providing guidance on the types of prompts to use and the bot's limitations with data sources. Interaction should 
+              be flexible, offering both free-text input and clickable links, while sorting and filtering options can help users refine results. 
+              Dynamic feedback is vital, and chatbots should be tailored to specific use cases. Transparency and effective error management enhance 
+              trust, ensuring users have ways to recover or rephrase questions when the bot doesn’t perform as expected.
+            </p>
+            <p>
+              When users think they are interacting with a basic bot, they often use keyword-based prompts. However, when the bot is perceived as 
+              human-like, they pose more complex queries. This is the key finding to define UI user experience; how to manage users expectations.
+            </p>
+            <h3 class="highlight pt-5">
+              Wireframes and prototypes
+            </h3>
+            <p class="tp">
+              Creating an effective AI chatbot required a deep dive into best practices to ensure it met user needs and aligned with its technical 
+              limitations. One critical insight from the research was the importance of setting correct user expectations. A chatbot isn’t a human, 
+              and users must understand its capabilities, limitations, and data sources the bot has available. These bots do not search the web, 
+              but restricted documents for answers. This is why I need to provide guidance on what kind of prompts to use. Clear expectations not 
+              only enhance the user experience but also build trust by preventing confusion or disappointment.
+            </p>
+            <p class="pb-4">
+              For the internal version, the main tool in the UI is the prompt area. I decided to place the text input and filters to the center 
+              of the space. It’s a good and clear place to start the work. To set the expectations of the user, I provided clear instructions of 
+              how to use the bot. 
+            </p>
+            <a href="https://heidimanninen.net/images/AIBot-InternalStartWire.png" target="_blank"><img src="images/AIBot-InternalStartWire.png" class="border img-fluid" alt="Wireframe: Main view of internal chatbot"></a>
+            <div class="image-caption">
+              Internal version, main view
+            </div><br>
+            <p class="pb-4">
+              The text input itself needed a lot of consideration. Users would benefit from filters, but where to place them? I tested 3 different 
+              options in all the different use cases to see how the elements work with each other.
+            </p>
+            <a href="https://heidimanninen.net/images/AIBot-PromptSetup.png" target="_blank"><img src="images/AIBot-PromptSetup.png" class="border img-fluid" alt="Testing for visualisation of prompt area"></a>
+            <div class="image-caption">
+              Testing for optimum prompt visualisation.
+            </div><br>
+            <p class="pb-4">
+              For the public-facing bot, which replaced a simpler chatbot on customer websites, I opted for a design resembling a chatbot but 
+              avoided overly conversational tone to manage user expectations. I also crafted example prompts for users. Even if we have predictive 
+              search that offers previously asked questions to the user, it’s more efficient to know what style to use from the start.
+            </p>
+            <a href="https://heidimanninen.net/images/AIBot-PublicStartWire.png" target="_blank"><img src="images/AIBot-PublicStartWire.png" class="img-fluid" alt="Wireframe: Main view of public chatbot"></a>
+            <div class="image-caption">
+              Public version for desktop view, copy with instructions.
+            </div><br>
+            <p>
+              Given the financial nature of the advice the bot provides, it was essential to emphasize why and how users should verify the accuracy 
+              of the answers. This ensures that users approach the information critically, reducing the risk of over-reliance on the chatbot's outputs. 
+              If the bots would answer badly or couldn’t answers at all, I needed to ensure there’s proper fallback handling and feedback options. 
+            </p>
+            <p class="pb-4">
+              With the internal version we would need to know what actually is wrong with the answer, so I added text based answer options. That way 
+              users can instruct us clearly and we can and develop the bot further. With the public version the thumbs up or down is enough. We can’t 
+              expect that random people know what parts of the answer were definetely wrong, so the answers are not so reliable. For them it’s much more 
+              important to offer options how to improve the answer or provide instruction to find out other ways to continue their search.
+            </p>
+            <a href="https://heidimanninen.net/images/AIBot-InternalFallbackWire.png" target="_blank"><img src="images/AIBot-InternalFallbackWire.png" class="border img-fluid" alt="Wireframe: fallback view"></a>
+            <div class="image-caption">  
+            Internal version view for fallback and feedback options.
+            </div><br>
+            <h3 class="highlight pt-5">
+              Outcomes and lessons learned
+            </h3>
+            <p class="tp">
+              Through the design process, I gained valuable insights into designing effective AI chatbot interfaces. One key takeaway was understanding how 
+              the prompt field should function when integrating predictive search and filtering options. This combination not only improves usability but 
+              also aligns user input with the bot’s technical capabilities, ensuring more relevant results.
+            </p>
+            <p>
+              Additionally, <span class="text-highlight">I learned the importance of nuanced copywriting in shaping user expectations.</span> Small adjustments in the language used within the 
+              interface can significantly influence how users perceive and interact with the bot, ultimately impacting their overall experience. These lessons 
+              will inform future iterations of the design and contribute to creating a more intuitive and user-friendly chatbot.
+            </p>
+            <p>
+                <a class="back-link" href="index.html">
+                    <img src="images/back-arrow.svg" class="img-fluid py-4" alt="Arrow pointing left">
+                    Back to Work page
+                </a>
+            </p>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <footer class="container-fluid">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                </div>
+                <div class="col-md-8">
+                  <p><a href="https://www.linkedin.com/in/heidi-manninen-b1277a5/" target="_blank"><img src="images/linkedin.svg" class="linkedin" style="height:24px;" /></a></p>
+                  <p><a href="mailto:heidi.manninen@proton.me">Contact me</a></p>
+                  <p>&copy; 2025 Heidi Manninen</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+  </body>
+
+</html>

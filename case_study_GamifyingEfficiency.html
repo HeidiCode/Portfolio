@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Case Study - Heidi Manninen</title>
+    <!-- Link to the external CSS file -->
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@100..900&family=Playfair-display:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  </head>
+  <body>
+
+    <nav class="navbar fixed-top navbar-expand-sm">
+      <div class="container">
+        <div class="col-sm-4">
+          <a class="navbar-brand" href="index.html">Heidi Manninen</a>
+        </div>
+        <div class="col-sm-8">
+          <div class="navbar-nav flex-row">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="index.html">Work</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about_me.html">About me</a>
+            </li>
+          </div>
+        </div> 
+      </div>
+    </nav>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-2 back-link-area">
+                <a class="back-link" href="index.html">
+                    <img src="images/back-arrow.svg" class="img-fluid py-4" alt="Back to Work">
+                    Back
+                </a>
+            </div>
+            <div class="case-study-background col-lg-10">
+            </div>
+        </div>
+    </div>
+
+    <main class="container my-5">
+      <section id="case-study" class="">
+        <div class="row pb-5">
+          <div class="col-md-4 pb-4">
+            <div class="caption">Case Study</div>
+            <h2>Gamifying Efficiency</h2>
+            <br>
+            <p class="hashs">
+              #B2B<br>
+              #Finferries
+            </p>
+          </div>
+          <div class="col-md-8">
+            <p>
+              How to guide ferry captains to navigate routes with maximum efficiency while reducing energy use and CO₂ emissions and keeping schedules on track?
+            </p>
+            <h4>
+              Team
+            </h4>
+            <p>
+              Designer<br>
+              Project manager / Developer
+            </p>
+            <h4>
+              My contribution
+            </h4>
+            <p>
+              Research<br>
+              User flows<br>
+              Wireframes<br>
+              UI + Visual design<br>
+              Accessibility<br>
+              Prototype    
+            </p>
+          <div class="col-md-8">
+            <h3 class="highlight pt-5">
+              Research
+            </h3>
+            <p class="tp">
+              When working on the ferry navigation system project, I didn’t have the opportunity to interview end-users directly. 
+              Despite this limitation, I conducted research of vehicles control visualisations and gained valuable insights by visiting a ferry’s bridge.
+            </p>
+            <h4>
+              Observations from the Ferry Bridge Visit
+            </h4>
+            <p>
+              During my visit to the bridge, I observed the screens and interfaces used by the captains. High-contrast UIs dominated the displays, 
+              ensuring clear visibility in varying light conditions. One surprising insight was the captains’ preference for dark mode, even during 
+              daylight hours. This preference was based on reducing eye strain and maintaining focus over extended periods of operation.
+            </p>
+            <h4>
+              Power Utilization Visualizations
+            </h4>
+            <p>
+              Critical aspect of the system is helping captains understand when they are using the optimal amount of throttle to drive the ferry. 
+              My research included studying different types of common tools and techniques used in driving vehicles, such as attitude indicator 
+              in aviation and ship's throttle handle. I investigated various approaches to visualize power efficiency, considering options like 
+              soundwaves and line graphs.
+            </p>
+            <h3 class="highlight pt-5">
+              Sketching and wire framing
+            </h3>
+            <p class="tp">
+              The goal was to create a visual aid that was both straightforward and actionable, ensuring captains could make adjustments quickly 
+              and confidently.
+            </p>
+            <p class="pb-4">
+              I tested visualisations like soundwaves and throttle handle. These were interesting, but seemed unnecessarily complicated way to 
+              visualise power consumption. In the end, line diagram style of visualisation was easiest to understand. It easily contains information 
+              of used amount of power in travelled time or distance.
+            </p>
+            <a href="https://heidimanninen.net/images/ROBI-SoundwaveSketch.jpg" target="_blank"><img src="images/ROBI-SoundwaveSketch.jpg" class="img-fluid border" alt="Sketch with soundwaves"></a>
+            <div class="image-caption">
+              Visualising throttle as a sound wave - the more the throttle used, the wider the area. There are two waves to compare - one for 
+              ongoing route and one for optimum performance.
+            </div><br>
+            <a href="https://heidimanninen.net/images/ROBI-SoundwaveSketch2.jpg" target="_blank"><img src="images/ROBI-SoundwaveSketch2.jpg" class="img-fluid border" alt="Vector view of soundwaves"></a>
+            <div class="image-caption">
+              Sound wave approach drawn in XD. I also tried if visualising the throttle handle would be intuitive way to see the power usage.
+            </div><br>
+            <p class="pb-4">
+              In the end I used modified visualisation of a line graph. The diagram stayed easy to read also when I added the two lines, one 
+              for optimum route and one for drivers current performance. As we were thinking to introduce gamification to the system, I made 
+              the optimum line thicker. That way it would be easier to aim users line to match the area of optimum performance.
+            </p>
+            <a href="https://heidimanninen.net/images/ROBI-LineSketch.jpg" target="_blank"><img src="images/ROBI-LineSketch.jpg" class="img-fluid border" alt="Sketch of power curves"></a>
+            <div class="image-caption">
+              Two lines - drivers and optimum, identified by width and color.
+            </div><br>
+            <p class="pb-4">
+              Weather has the biggest effect on power usage while on route. We should also show current wind speed and direction.
+            </p>
+            <a href="https://heidimanninen.net/images/ROBI-OngoingLegWeather.jpg" target="_blank"><img src="images/ROBI-OngoingLegWeather.jpg" class="img-fluid border" alt="Wireframe of captains view"></a>
+            <div class="image-caption">  
+            Wind speed and direction added as the route is driven.
+            </div><br>
+            <p class="pb-4">
+              We wanted to try gamification for nudging drivers to compete each other for best possible energy save. So we created a statistics 
+              page with leaderboard. The board contains drivers that operate the same route and vessel, so the used power numbers are comparable.
+            </p>
+            <a href="https://heidimanninen.net/images/ROBI-Leaderboard.png" target="_blank"><img src="images/ROBI-Leaderboard.png" class="img-fluid border" alt="Leaderboard"></a>
+            <div class="image-caption">  
+              Leaderboard for drivers.
+            </div><br>
+            <h3 class="highlight pt-5">
+              Prototyping and iterating
+            </h3>
+            <p class="tp pb-4">
+              I created the first version of the design with dark theme. I tested the color contrasts in different lighting situations from bright 
+              sun light to pitch black night.
+            </p>
+            <a href="https://heidimanninen.net/images/ROBI-LatestLeg-VesselArrivedToHarbour.jpg" target="_blank"><img src="images/ROBI-LatestLeg-VesselArrivedToHarbour.jpg" class="img-fluid border" alt="Design for captains view"></a>
+            <div class="image-caption">
+              Completed route with analysis of the driver's performance.
+            </div><br>
+            <p class="pb-4">
+              The UI was coded a bit differently and to different aspect ratio than I designed it, because of various technical reasons. I adapted 
+              and made some visual changes to the design. Main aspects were still the same and I could make the UI work.
+            </p>
+            <a href="https://heidimanninen.net/images/ROBI-FinalDesign-Energy.jpg" target="_blank"><img src="images/ROBI-FinalDesign-Energy.jpg" class="img-fluid border" alt="Updated design for captains view"></a>
+            <div class="image-caption">
+              New design when adapting to the coded version.
+            </div><br>
+            <p>
+              I got feedback that texts are too small to read from a distance. It turned out that the selected tablet for the software was smaller 
+              and placed further away from captains chair than we thought. So I adjusted the size of all the elements that a captain needs to see 
+              from afar. Some pages have so much info that they could not be made much smaller, but the content of those pages are anyway studied 
+              when the user is not driving and can take the tablet to his hands. Main view is the energy consumption page, and that is still easy 
+              to read from the distance.
+            </p>
+            <h3 class="highlight pt-5">
+              Outcomes and lessons learned
+            </h3>
+            <p class="tp">
+              At first drivers were wary for the reasons why the new screen is needed at all. But after they used it for a while, most of them now 
+              drive better. <span class="text-highlight">Most importantly, energy consumption and CO2 emissions decreased by as much as 28%.</span> If they switch to a new route, they adapt and learn faster with the app.
+            </p>
+            <p>
+              I needed to change the sizing and compositions of the elements for a few times. We gained more info of the hardware and surroundings 
+              as we went along and the coded version was done on some old version of similar UI. Development and design needed to find a common 
+              ground - which I think we managed quite well.
+            </p>
+            <p>
+              After a few months of use, we learned that users do not like the leaderboard. The same guys are always on top, and that’s not nice 
+              for those that can’t beat them. There are not that many captains driving the same route and vessel, so that might be the main reason 
+              for score board to be static. And the captains being rough men, the last people in the list get to hear about it all the time. In the 
+              future I’ll be more careful when adding features that persuades users that know each other to openly compete on their work. It needs a 
+              bigger group of users and suitable environment to have better chances of working. Nevertheless, the captains still keep competing 
+              against themselves and improving in their work.
+            </p>
+            <p>
+                <a class="back-link" href="index.html">
+                    <img src="images/back-arrow.svg" class="img-fluid py-4" alt="Arrow pointing left">
+                    Back to Work page
+                </a>
+            </p>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <footer class="container-fluid">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                </div>
+                <div class="col-md-8">
+                  <p><a href="https://www.linkedin.com/in/heidi-manninen-b1277a5/" target="_blank"><img src="images/linkedin.svg" class="linkedin" style="height:24px;" /></a></p>
+                  <p><a href="mailto:heidi.manninen@proton.me">Contact me</a></p>
+                  <p>&copy; 2025 Heidi Manninen</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+  </body>
+
+</html>
