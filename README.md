@@ -2,9 +2,14 @@
 
 My personal portfolio website — plain HTML, CSS, and images (no build tools, no frameworks).
 
-- **Repo:** `HeidiCode/Portfolio` on GitHub
+- **Repo:** `HeidiCode/Portfolio` on GitHub (public)
 - **Hosting:** Azure Static Web Apps
 - **Live updates:** automatic — every push to `main` redeploys the site (see below)
+
+> **This repo is public**, so anyone can read the code and commit history. That's fine — the
+> deployment token is *not* in the code. It lives only in GitHub's encrypted **Secrets**
+> (`AZURE_STATIC_WEB_APPS_API_TOKEN`), which are never exposed in a public repo, so the site stays
+> secure. Just don't paste real tokens, passwords, or private info into the files themselves.
 
 ## Files
 
