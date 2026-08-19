@@ -7,3 +7,6 @@
 
 # Azure Static Web Apps deployment output
 .deployment
+
+# Local working files, not for the public repo
+DoNotPush/
