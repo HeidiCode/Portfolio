@@ -10,3 +10,6 @@
 
 # Local working files, not for the public repo
 DoNotPush/
+
+# Local preview config (Claude Code)
+.claude/

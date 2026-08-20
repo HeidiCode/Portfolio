@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reshaping Workflows - Heidi Manninen</title>
+    <!-- Link to the external CSS file -->
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@100..900&family=Playfair-display:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  </head>
+  <body>
+
+    <nav class="navbar fixed-top navbar-expand-sm">
+      <div class="container">
+        <div class="col-sm-4">
+          <a class="navbar-brand" href="index.html">Heidi Manninen</a>
+        </div>
+        <div class="col-sm-8">
+          <ul class="navbar-nav flex-row">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="index.html">Work</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about_me.html">About me</a>
+            </li>
+          </ul>
+        </div> 
+      </div>
+    </nav>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-2 back-link-area">
+                <a class="back-link" href="index.html">
+                    <img src="images/back-arrow.svg" class="img-fluid py-4" alt="Back to Work">
+                    Back
+                </a>
+            </div>
+            <div class="case-study-background col-lg-10">
+            </div>
+        </div>
+    </div>
+
+    <main class="container my-5">
+      <section id="case-study" class="">
+        <div class="row pb-5">
+          <div class="col-md-4 pb-4">
+            <div class="caption">Case Study</div>
+            <h2>Reshaping Workflows</h2>
+            <br>
+            <p class="hashs">
+              #PersonalProject<br>
+              #AIWorkflow
+            </p>
+          </div>
+          <div class="col-md-8">
+            <p>
+              Large language models are changing how almost every field works, and there&rsquo;s no ready-made playbook for it. Everyone has to find the ways 
+              of working that suit them. As a UX/UI designer, my work has centred on ideation, design and user understanding. I&rsquo;d taken part in coding 
+              front ends before, but AI now makes it possible to reshape the whole workflow. I wanted to test how different AI tools could link the stages of 
+              my work together, from start to finish, and produce something I could actually use on my phone.
+            </p>
+            <p>
+              The test case was real. Our family needed clear instructions for turning on the running water at our summer cabin and distributing it between 
+              buildings. Winter adds complexity: some pipes freeze and can&rsquo;t be used, and the boilers need to be operated differently depending on the 
+              situation. It didn&rsquo;t need to be polished, just simple and functional. It was a good, low-stakes way to try new ways of working.
+            </p>
+            <p>
+              Live app: <a href="https://heidicode.github.io/Mokin-vedet/" target="_blank">M&ouml;kin vedet</a>
+            </p>
+            <h4>
+              Team
+            </h4>
+            <p>
+              Solo project
+            </p>
+            <h4>
+              My contribution
+            </h4>
+            <p>
+              Design, prototyping, and hands-on build, using AI tools as collaborators at each stage.
+            </p>
+
+            <h3 class="highlight pt-5">
+              Ideation
+            </h3>
+            <p class="tp">
+              I started by talking the idea through with ChatGPT. But I didn&rsquo;t approach it as the cabin problem directly. Instead I framed it as a simple 
+              process-documentation tool, where a user creates a process and describes a task step by step, attaching images and notes about what must be checked 
+              before each one. Framing it generically gave me room to experiment with different tools and workflows at each later stage, instead of being locked 
+              into one narrow use case.
+            </p>
+            <p>
+              Together we shaped this into a clear product vision and MVP plan: the problem, the audience, current workflows, and a competitor analysis that placed 
+              it somewhere between lightweight screenshot guides and heavy compliance systems. ChatGPT did a reasonable job with the analysis, but it kept wanting 
+              to add scope, like user accounts and pricing models, more than a personal project needed. Deciding what to leave out took more effort than the analysis itself.
+            </p>
+
+            <h3 class="highlight pt-5">
+              Design system and prototype
+            </h3>
+            <p class="tp pb-4">
+              With the blueprint ready, I moved into Figma and drew a first simple version myself: the key components and CRUD elements (create, read, update, delete). 
+              I wanted to see how the AI tools would handle a real starting point instead of a blank file. From there, Figma&rsquo;s built-in design agent built out a 
+              small design system with variables, colours and typography, and suggested its own additions for what the system still needed. It followed my instructions 
+              well and fixed the couple of small component bugs it introduced as soon as I pointed them out. It worked so well that I plan to use it for most of the work 
+              I do inside Figma from now on.
+            </p>
+            <a href="https://heidimanninen.net/images/Process-FirstDesign.png" target="_blank"><img src="images/Process-FirstDesign.png" class="border img-fluid" alt="The first process-documentation app design in Figma, shown next to its design system of colour, typography and component variables"></a>
+            <div class="image-caption">
+              The first design drawn by hand in Figma, with the design system built out by Figma&rsquo;s design agent.
+            </div><br>
+            <p>
+              I also gave the design file to Figma Make to turn it into a clickable prototype. This is the lighter way to use AI here, since it doesn&rsquo;t create new 
+              elements, just makes a working prototype out of the existing design. It did an okay job. It started building a back end I didn&rsquo;t need, but once I said 
+              so, it kept things simple: enough to click through creating, editing, and deleting tasks. No need to save anything for later.
+            </p>
+            <p>
+              Figma file: <a href="https://www.figma.com/design/Cu0q4WWhA33EMpzLfYERuD/Prosessin-rakentaminen-org---Design-system?node-id=50-1419" target="_blank">Prosessin rakentaminen &mdash; Design system</a><br>
+              Figma Make prototype: <a href="https://www.figma.com/make/wtD0UEXDn4VTWMmGXMmf5s/Prosessin-rakentaminen---Prototyyppi?t=iApriGZxZ0ze3AJL-1" target="_blank">Prosessin rakentaminen &mdash; Prototyyppi</a>
+            </p>
+
+            <h3 class="highlight pt-5">
+              Coding and pushing back to Figma
+            </h3>
+            <p class="tp pb-4">
+              Next, I gave Claude Code access to the Figma design system, plus a folder of markdown files describing the cabin&rsquo;s water system: its constraints, the 
+              boilers, and which pipes freeze in winter. I asked it to build a working HTML page with situation-specific instructions, describing each task, the tools needed, 
+              and what to check before starting. Once the page worked, I wanted to see how well Claude Code could take the project back into Figma, so I asked it to build a 
+              new design system with the components and documentation both a designer and a developer would need.
+            </p>
+            <a href="https://heidimanninen.net/images/Process-FirstVibeCode.png" target="_blank"><img src="images/Process-FirstVibeCode.png" class="border img-fluid" alt="The first vibe-coded version of the water instructions app, showing a step-by-step process view"></a>
+            <div class="image-caption">
+              The first vibe-coded version, built by Claude Code from the Figma design system and a folder of background notes.
+            </div><br>
+            <p>
+              Claude Code worked well overall. It had minor trouble making the code pixel-perfect against the Figma drawings, so I had to correct the CSS myself. Claude is slow 
+              at small visual fixes like that, since it takes a screenshot, studies it, and compares it back to the design. It was often faster to just fix the code by hand. 
+              Being comfortable reading and writing CSS and HTML helped a lot here.
+            </p>
+            <p>
+              The components Claude Code built in Figma worked fine, and all the necessary elements were there, but the layout was off. Claude put every component on its own page, 
+              so the instructions ended up disconnected from the components they described. That&rsquo;s something I still need to fix in the design system.
+            </p>
+            <p>
+              Figma file: <a href="https://www.figma.com/design/SSsAlo5ISdH7vPkz700J9I/Prosessit---Claudista-Figmaan?node-id=19-7&amp;t=mDt4C6tCcxJIsU39-1" target="_blank">Prosessit &mdash; Claudista Figmaan</a>
+            </p>
+
+            <h3 class="highlight pt-5">
+              Exploring styles and features
+            </h3>
+            <p class="tp pb-4">
+              To explore other visual directions, I gave Claude Design very little on purpose: a description of the app&rsquo;s basic features and one reference, an article about 
+              2026 web design trends. I didn&rsquo;t want to constrain its ideation with the work from earlier stages. It came back with several visually different versions of the 
+              task list. I made small corrections and picked the one I liked best.
+            </p>
+            <a href="https://heidimanninen.net/images/Process-StyleVariations.png" target="_blank"><img src="images/Process-StyleVariations.png" class="border img-fluid" alt="Several visually distinct style variations of the task list, generated side by side by Claude Design"></a>
+            <div class="image-caption">
+              Style variations generated by Claude Design from a deliberately minimal brief.
+            </div><br>
+            <p>
+              Because Claude Design can&rsquo;t reach Figma yet, at least not in summer 2026, I couldn&rsquo;t push the new style into the Figma project. So I had it produce an HTML 
+              version of the design system instead, which I could hand to Claude Code to carry the work on.
+            </p>
+            <p>
+              Even though I tried to constrain the ideation as little as possible, the visual suggestions felt a bit bland to me. My limited reference material probably contributed; 
+              I should have gathered a bigger set of clearly distinct examples. Still, a couple of the suggestions were genuinely good, and I picked one to carry forward. Later, I added 
+              a switch to the app, so you can change between the minimalist original theme and the new neobrutalist one as a demonstration. Eventually, I&rsquo;ll let users choose which 
+              theme is better.
+            </p>
+
+            <h3 class="highlight pt-5">
+              Version control &amp; handoff
+            </h3>
+            <p class="tp">
+              Version history matters a lot for coded products, especially when vibe-coding, since AI can break already finished elements and you need to revert. I used GitHub, driven 
+              through Claude Code, to give the prototype a real home: a versioned, public repository with a live, auto-deploying address, and a proper version-control workflow instead of 
+              saving files over the top of each other.
+            </p>
+            <p class="pb-4">
+              I wanted the project to demonstrate version control too, not just get published, so I asked for it to be structured the way a developer team would work. Claude Code created 
+              the repository, made a clean first commit as a baseline, and switched on GitHub Pages. From there we worked feature by feature: each meaningful change, like the switch between 
+              the two visual themes, went onto its own branch, into a pull request, and back into the main line. A short project guide file now gives anyone picking up the repo the context they need.
+            </p>
+            <a href="https://heidimanninen.net/images/Process-VersionControlNB.png" target="_blank"><img src="images/Process-VersionControlNB.png" class="border img-fluid" alt="The finished app in its neobrutalist theme, the feature that was developed on its own branch and merged through a pull request"></a>
+            <div class="image-caption">
+              The neobrutalist theme, built on its own branch and merged through a pull request.
+            </div><br>
+            <p>
+              Knowing Git&rsquo;s principles from GitLab meant I wasn&rsquo;t learning version control and a new tool at the same time, so I could prompt deliberately: a branch here, a pull 
+              request there. Claude Code handled the mechanics quickly and correctly. My job was the judgement calls, like how to structure the repo and what belonged in a public repo at all. 
+              That last one mattered more than I expected. Partway through I renamed the project, because the original name gave away where our cabin is. Scrubbing it from the current files was 
+              easy. Realising it still lingers in the commit history was the real lesson: on a public repo, everything you commit stays part of the record, not just the latest version.
+            </p>
+            <p>
+              Repo: <a href="https://github.com/HeidiCode/Mokin-vedet" target="_blank">github.com/HeidiCode/Mokin-vedet</a><br>
+              Live app: <a href="https://heidicode.github.io/Mokin-vedet/" target="_blank">heidicode.github.io/Mokin-vedet</a>
+            </p>
+
+            <h3 class="highlight pt-5">
+              Accessibility audit
+            </h3>
+            <p class="tp">
+              With the app working in both themes, I wanted to check it was genuinely usable, not just by me. I asked Claude Code to audit it against WCAG 2.1 AA across both themes and fix 
+              whatever it found. Rather than driving Lighthouse by hand, it ran axe-core (the same accessibility engine Lighthouse uses) directly against the running page, testing each theme 
+              and view systematically.
+            </p>
+            <p class="pb-4">
+              It came back with a concrete list of problems and a fix for each: one critical issue, photo thumbnails that were buttons with no accessible name, plus colour-contrast failures, 
+              a viewport setting that blocked pinch-zoom, content sitting outside any landmark, focus escaping the completion dialog, and animations ignoring a &ldquo;reduce motion&rdquo; 
+              system setting. Claude Code worked through them all and re-ran axe-core after each batch until every view in both themes reported zero violations.
+            </p>
+            <a href="https://heidimanninen.net/images/Process-AccessibilityAudit.png" target="_blank"><img src="images/Process-AccessibilityAudit.png" class="border img-fluid" alt="The app after the accessibility audit, with the contrast of the dimmed future steps corrected"></a>
+            <div class="image-caption">
+              After the audit: every view in both themes reporting zero violations.
+            </div><br>
+            <p>
+              The contrast problems were familiar territory. Colour and hierarchy are a visual designer&rsquo;s own ground: I&rsquo;d dimmed the &ldquo;locked&rdquo; future steps with 
+              transparency so they&rsquo;d recede, which easily drops text below the required contrast. The fix was finding a muted pairing, a cream card with grey text, that still reads as 
+              faded but measures above the 4.5:1 threshold. That kind of trade-off is something a tool can measure but not decide for you. <span class="text-highlight">The genuinely new part 
+              was everything underneath: keyboard focus escaping a dialog, buttons with no accessible name, content sitting outside any landmark. That has always been developer territory, but 
+              this time I worked through it myself and verified each fix with axe. It&rsquo;s the clearest example in this whole project of AI extending my reach rather than replacing what I 
+              already do.</span>
+            </p>
+            <p>
+              Standard: WCAG 2.1 AA, verified with axe-core in both themes.
+            </p>
+
+            <h3 class="highlight pt-5">
+              Outcomes &amp; lessons learned
+            </h3>
+            <p class="tp">
+              The point of this project was to explore different tools and AIs so I could stitch up a workflow for different kinds of projects. Now I know where these tools excel and what to 
+              look out for.
+            </p>
+            <p>
+              What began as a way to share cabin instructions with my family became a full run through the product process, done solo with AI. The idea went from a ChatGPT conversation to a 
+              designed MVP and a living design system in Figma, to a working, vibe-coded prototype, through a visual-style exploration and an accessibility pass, and finally to a public, versioned 
+              repository a developer could pick up. That&rsquo;s the real result: a small personal need turned into a handoff-ready app. Not long ago, some of those stages would have needed other people.
+            </p>
+            <p>
+              <span class="text-highlight">No single tool did it all.</span> Each earned its place at a different stage: ChatGPT for framing and scope, Figma&rsquo;s agent and Figma Make for the 
+              design and prototype, Claude Code for building and for the Git and GitHub mechanics, Claude Design for visual exploration, axe-core for the accessibility audit. The tools don&rsquo;t 
+              yet always talk to each other, so I bridged them by hand, like turning an MVP blueprint into something a coding AI could use, or exporting an HTML design system so one AI&rsquo;s output 
+              could become another&rsquo;s input.
+            </p>
+            <p>
+              My own skills didn&rsquo;t become redundant. They became judgement. Being fluent in CSS and HTML meant I could step in where Claude Code was slow. Knowing Git&rsquo;s principles meant I 
+              could prompt deliberately instead of accepting whatever came out. A tool could measure a problem, but it couldn&rsquo;t make the call: which MVP features to cut, when a change deserved its 
+              own branch, what belongs in a public repo, or how to keep a &ldquo;faded&rdquo; look while still passing a contrast threshold. Those decisions stayed mine.
+            </p>
+            <p>
+              The honest limits are worth keeping in view too. ChatGPT over-scopes and needs reining in. Claude Design&rsquo;s ideas were only as good as the references I gave it. Claude Code is slow at 
+              small visual fixes, and it sometimes jumps straight to work from the slightest suggestion, even when I only wanted options.
+            </p>
+            <p>
+              The app isn&rsquo;t finished. Next is usability testing with real users, then iterating on what they find. But as an experiment in working with AI, it already did what I set out to do: it 
+              showed me how far one designer can reach across the whole product process, and where my own hands and judgement still make the difference.
+            </p>
+            <p>
+              Live app: <a href="https://heidicode.github.io/Mokin-vedet/" target="_blank">heidicode.github.io/Mokin-vedet</a>
+            </p>
+            <p>
+                <a class="back-link" href="index.html">
+                    <img src="images/back-arrow.svg" class="img-fluid py-4" alt="Arrow pointing left">
+                    Back to Work page
+                </a>
+            </p>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <footer class="container-fluid">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                </div>
+                <div class="col-md-8">
+                  <p><a href="https://www.linkedin.com/in/heidi-manninen-b1277a5/" target="_blank"><img src="images/linkedin.svg" class="linkedin" style="height:24px;" /></a></p>
+                  <p><a href="mailto:heidi.manninen@proton.me">Contact me</a></p>
+                  <p>&copy; 2025 Heidi Manninen</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+  </body>
+
+</html>
