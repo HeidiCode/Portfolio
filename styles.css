@@ -125,6 +125,13 @@ li {
     padding-bottom: 1.6rem;
 }
 
+/* Portrait images: cap the width so tall screenshots don't dominate the page.
+   Selector is more specific than .img-fluid because Bootstrap loads after this file. */
+main img.img-portrait {
+    width: 100%;
+    max-width: 500px;
+}
+
 .image-caption {
     font-size: 1rem;
     color: #707070;
