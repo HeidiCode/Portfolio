@@ -22,6 +22,40 @@ My personal portfolio website — plain HTML, CSS, and images (no build tools, n
 | `styles.css` | All styling |
 | `images/` | Photos, screenshots, and SVG icons |
 | `.github/workflows/` | The auto-deploy setup (don't need to touch this) |
+| `DoNotPush/` | My local drafts and working files — never goes to GitHub |
+| `.claude/` | Local preview settings — never goes to GitHub |
+
+## Adding a new case study
+
+Two files to touch, plus the images:
+
+1. **Copy `case_template.html`** to `case_study_YourTitle.html` and write the page into it.
+   Sections use `<h3 class="highlight pt-5">` — keep those headings **short, about 32
+   characters**, or the pale blue band behind them cuts through the second line.
+2. **Add a summary card to `index.html`** — copy an existing one and swap the content.
+   It's the short version: challenge, my role, one image, results, a highlight line, and
+   the link to the full page.
+3. **Drop the images into `images/`.** Keep screenshots as **PNG** (they're sharper and
+   usually smaller than JPG for interface shots). If an image is taller than it is wide,
+   add `img-portrait` to its `class` so it doesn't take over the page:
+
+   ```html
+   <img src="images/MyShot.png" class="border img-fluid img-portrait" alt="...">
+   ```
+
+Always write an `alt="..."` describing the picture — it's what screen readers read out.
+
+### Seeing it before it goes live
+
+Because the pages load their stylesheet separately, opening a file straight from Finder
+shows it unstyled. To view it properly, run this from inside the folder and then open
+<http://localhost:4310> in a browser:
+
+```bash
+python3 -m http.server 4310
+```
+
+Press `Ctrl+C` in the terminal to stop it.
 
 ## How to update the live site
 
